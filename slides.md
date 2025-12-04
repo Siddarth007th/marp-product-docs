@@ -93,3 +93,11 @@ $$
 ```bash
 marp slides.md --pdf
 marp slides.md --html
+---
+
+<!-- _backgroundImage: url("https://source.unsplash.com/featured/?technology") -->
+
+# System Overview
+
+This slide uses a background image defined with a Marp directive.
+
