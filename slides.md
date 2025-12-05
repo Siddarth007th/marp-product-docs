@@ -1,103 +1,93 @@
 ---
 marp: true
-theme: product-docs
 paginate: true
-footer: "Product Documentation • Page ${page} / ${total}"
+footer: "24f2008507@ds.study.iitm.ac.in"
+theme: custom
 ---
 
-<!-- _class: lead -->
+<!--
+Custom Marp theme inside this file
+-->
+<style>
+section {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+h1 {
+  color: #0a84ff;
+}
+.custom-box {
+  padding: 20px;
+  border: 3px solid #0a84ff;
+  border-radius: 10px;
+  background: #eef6ff;
+}
+</style>
 
-# Product X Documentation Overview
+# Product Documentation Overview  
+### Author: 24f2008507@ds.study.iitm.ac.in
 
-**Technical Writer:** You  
-**Contact:** 24f2008507@ds.study.iitm.ac.in  
-
-A concise, version-controlled documentation deck for Product X.
+This presentation provides a structured, maintainable product documentation outline using **Marp**.
 
 ---
 
-## Agenda
+# Custom Theme & Styling  
+### (Requirement: Custom styling + theme)
 
-1. Product overview  
-2. Architecture & data flow  
-3. API behavior and complexity  
-4. Configuration & deployment  
-5. Monitoring and troubleshooting  
+<div class="custom-box">
+This slide demonstrates a custom CSS class with borders, background colors,  
+and a custom theme defined in the Marp header.
+</div>
+
+---
+
+# Algorithmic Complexity  
+### (Requirement: Mathematical equation)
+
+The time complexity of a divide-and-conquer algorithm such as Merge Sort is:
+
+\[
+T(n) = 2T\left(\frac{n}{2}\right) + n
+\]
+
+By the Master Theorem:
+
+\[
+T(n) = O(n \log n)
+\]
 
 ---
 
 <!--
-backgroundImage: url("https://source.unsplash.com/featured/?servers,cloud,data")
-backgroundSize: cover
-backgroundColor: rgba(0,0,0,0.55)
-_class: lead
+Background image slide
 -->
+<!-- Set your image path from the repo: e.g. './bg.png' -->
+<section
+  data-background-image="https://images.unsplash.com/photo-1527689368864-3a821dbccc34"
+  data-background-size="cover"
+>
+  
+# Background Image Slide  
+### (Requirement: Must include at least one slide with background image)
 
-# High-Level Architecture
+The background image is applied using Marp's built-in background directive.
 
-- Event producers → message queue  
-- Workers → transform & store data  
-- REST / gRPC APIs  
-- Metrics, logs, tracing for visibility  
-
-*(This slide satisfies the **background image** requirement.)*
-
----
-
-## Data Flow & Components
-
-- API Gateway  
-- Ingestion Service  
-- Processing Workers  
-- Storage Layer  
-- Query & Reporting layer  
+</section>
 
 ---
 
-## API Complexity and Performance
+# Documentation Structure
 
-### Time Complexity Examples
-
-- Lookup by ID:  
-  $$ T(n) = O(1) $$
-- Sorted batch query:  
-  $$ T(n) = O(n \log n) $$
-- Full scan:  
-  $$ T(n) = O(n) $$
-
-Combined:
-$$
-T(n) = O(n \log n) + O(n) \approx O(n \log n)
-$$
+- Installation  
+- API Usage  
+- System Architecture  
+- Deployment Guide  
+- Testing Strategy  
 
 ---
 
-## Configuration Management
+# Thank You
 
-- OAuth2 / OIDC  
-- Rate limits  
-- Storage backends  
-- Version-controlled configs  
+For more information, contact:  
+**24f2008507@ds.study.iitm.ac.in**
 
----
-
-## Deployment Workflow
-
-1. Feature branch  
-2. Code + tests + docs updated  
-3. CI: lint, test  
-4. Merge  
-5. Auto-deploy  
-6. Export slides with Marp  
-
-```bash
-marp slides.md --pdf
-marp slides.md --html
----
-
-<!-- _backgroundImage: url("https://source.unsplash.com/featured/?technology") -->
-
-# System Overview
-
-This slide uses a background image defined with a Marp directive.
 
