@@ -1,103 +1,72 @@
 ---
 marp: true
-theme: product-docs
 paginate: true
-footer: "Product Documentation • Page ${page} / ${total}"
+footer: "24f2008507@ds.study.iitm.ac.in"
+theme: custom
 ---
 
-<!-- _class: lead -->
+<!-- Custom Theme -->
+<style>
+section {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+h1 {
+  color: #0a84ff;
+}
+.custom-box {
+  padding: 20px;
+  border: 3px solid #0a84ff;
+  border-radius: 10px;
+  background: #eef6ff;
+}
+</style>
 
-# Product X Documentation Overview
+# Product Documentation  
+### Author: 24f2008507@ds.study.iitm.ac.in
 
-**Technical Writer:** You  
-**Contact:** 24f2008507@ds.study.iitm.ac.in  
-
-A concise, version-controlled documentation deck for Product X.
-
----
-
-## Agenda
-
-1. Product overview  
-2. Architecture & data flow  
-3. API behavior and complexity  
-4. Configuration & deployment  
-5. Monitoring and troubleshooting  
-
----
-
-<!--
-backgroundImage: url("https://source.unsplash.com/featured/?servers,cloud,data")
-backgroundSize: cover
-backgroundColor: rgba(0,0,0,0.55)
-_class: lead
--->
-
-# High-Level Architecture
-
-- Event producers → message queue  
-- Workers → transform & store data  
-- REST / gRPC APIs  
-- Metrics, logs, tracing for visibility  
-
-*(This slide satisfies the **background image** requirement.)*
+This deck demonstrates Marp capabilities including themes, background images, math, and more.
 
 ---
 
-## Data Flow & Components
+# Custom Theme & Styling
 
-- API Gateway  
-- Ingestion Service  
-- Processing Workers  
-- Storage Layer  
-- Query & Reporting layer  
+<div class="custom-box">
+This slide uses a custom CSS class and custom theme.
+</div>
 
 ---
 
-## API Complexity and Performance
+# Algorithmic Complexity
 
-### Time Complexity Examples
+Time complexity example:
 
-- Lookup by ID:  
-  $$ T(n) = O(1) $$
-- Sorted batch query:  
-  $$ T(n) = O(n \log n) $$
-- Full scan:  
-  $$ T(n) = O(n) $$
+\[
+T(n) = 2T\left(\frac{n}{2}\right) + n
+\]
 
-Combined:
-$$
-T(n) = O(n \log n) + O(n) \approx O(n \log n)
-$$
+By Master Theorem:
+
+\[
+T(n) = O(n \log n)
+\]
 
 ---
 
-## Configuration Management
-
-- OAuth2 / OIDC  
-- Rate limits  
-- Storage backends  
-- Version-controlled configs  
+<!-- _backgroundImage: "https://images.unsplash.com/photo-1527689368864-3a821dbccc34" -->
+# Background Image Slide  
+This slide uses a background image.
 
 ---
 
-## Deployment Workflow
+# Documentation Structure
 
-1. Feature branch  
-2. Code + tests + docs updated  
-3. CI: lint, test  
-4. Merge  
-5. Auto-deploy  
-6. Export slides with Marp  
+- Installation  
+- API Reference  
+- Deployment  
+- Troubleshooting  
 
-```bash
-marp slides.md --pdf
-marp slides.md --html
 ---
 
-<!-- _backgroundImage: url("https://source.unsplash.com/featured/?technology") -->
-
-# System Overview
-
-This slide uses a background image defined with a Marp directive.
+# Contact  
+Email: **24f2008507@ds.study.iitm.ac.in**
 
